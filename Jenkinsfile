@@ -13,8 +13,8 @@ pipeline
       }
       steps {
         sh 'mvn clean install'
-      ]
-    ]
+      }
+    }
     stage('Docker
       Build') {agent any
       steps {
