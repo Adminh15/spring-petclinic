@@ -1,4 +1,5 @@
-#!groovy pipeline {
+#!groovy 
+pipeline {
 agent none stages {
 stage('Maven Install') { agent {
 docker {
@@ -12,6 +13,7 @@ sh 'mvn clean install'
 stage('Docker Build') { agent any
 steps {
 sh 'docker build -t grupo05/spring-petclinic:latest .'
+}
 }
 }
 }
