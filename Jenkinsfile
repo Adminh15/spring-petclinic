@@ -15,4 +15,3 @@ sh 'docker build -t grupo05/spring-petclinic:latest .'
 }
 }
 }
-}
